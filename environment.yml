@@ -1,0 +1,23 @@
+name: spatialenv
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - pip=26.0.1
+  - python=3.13.12
+  - pip:
+      - anndata==0.12.10
+      - ipykernel==6.31.0
+      - ipython==9.10.0
+      - jupyter-client==8.8.0
+      - jupyter-core==5.9.1
+      - napari==0.6.6
+      - numpy==2.4.2
+      - ome-zarr==0.13.0
+      - scanpy==1.12
+      - spatialdata==0.7.2
+      - spatialdata-io==0.6.0
+      - spatialdata-plot==0.2.14
+      - squidpy==1.8.1
+      - zarr==3.1.5
