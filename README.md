@@ -32,13 +32,25 @@ As behavior can change quite a bit with different versions
 
 - Original dataset can be accessed from the Human Tumor Atlas Network data portal: https://humantumoratlas.org/ 
 
-- Public Galaxy history with interactive Vitessce dashboards: https://cancer.usegalaxy.org/u/watsocam/h/bgmp-spatial-omics-demo-tonsil-cycif 
+- The specific feature table (`cycif_tonsil.csv`) used in this notebook can be downloaded from this public Galaxy history: 
+
+https://cancer.usegalaxy.org/u/watsocam/h/bgmp-spatial-omics-demo-tonsil-cycif 
+
+The Galaxy history also has Vitessce dashboards that can be used to view the image, segmentation mask, and downstream quantified data
 
 *10x Genomics Visium and Xenium of breast cancer serial sections (Day 2)*
 
 - Original publication describing the dataset: https://doi.org/10.1038/s41467-023-43458-x 
 
 - Accessed via SpatialData spatial omics datasets: https://spatialdata.scverse.org/en/stable/tutorials/notebooks/datasets/README.html 
+    - Visium dataset name: `visium_associated_xenium_io` (For the notebook, this is stored in current working directory under `datasets/visium/data.zarr`)
+    - Xenium dataset name: `xenium_rep1_io` (For the notebook, this is stored in current working directory under `datasets/xenium/data.zarr`)
+
+- Link to download scRNA-seq reference dataset (originally from **Wu et al. (2021)** *Nature Genetics*) for Xenium cell-type annotation can be found in this notebook: 
+
+https://github.com/scverse/spatialdata-notebooks/blob/main/notebooks/paper_reproducibility/00_xenium_and_visium.ipynb 
+
+For the notebook, this is stored in current working directory under `datasets/sc_atlas/BC_atlas_xe.h5ad`
 
 ---
 
@@ -113,8 +125,26 @@ Available from: URL: http://dx.doi.org/10.4316/AECE.2016.04001
 
 *Day 2 slides*
 
+- Felipe Segato Dezem, Wani Arjumand, Hannah DuBose, Natalia Silva Morosini, Jasmine Plummer. 2024. Spatially Resolved Single-Cell Omics: Methods, Challenges, and Future Perspectives. Annual Review Biomedical Data Science. 7:131-153. https://doi.org/10.1146/annurev-biodatasci-102523-103640
+
+- Chen WT, Lu A, Craessaerts K, Pavie B, Sala Frigerio C, Corthout N, Qian X, Laláková J, Kühnemund M, Voytyuk I, Wolfs L, Mancuso R, Salta E, Balusu S, Snellinx A, Munck S, Jurek A, Fernandez Navarro J, Saido TC, Huitinga I, Lundeberg J, Fiers M, De Strooper B. Spatial Transcriptomics and In Situ Sequencing to Study Alzheimer's Disease. Cell. 2020 Aug 20;182(4):976-991.e19. doi: 10.1016/j.cell.2020.06.038. Epub 2020 Jul 22. PMID: 32702314.
+
+- Chen TY, You L, Hardillo JAU, Chien MP. Spatial Transcriptomic Technologies. Cells. 2023 Aug 10;12(16):2042. doi: 10.3390/cells12162042. PMID: 37626852; PMCID: PMC10453065.
+
+- Plummer, J.T., Dezem, F.S., Cook, D.P. et al. Standardized metrics for assessment and reproducibility of imaging-based spatial transcriptomics datasets. Nat Biotechnol (2025). https://doi.org/10.1038/s41587-025-02811-9
+
+- Ospina OE, Manjarres-Betancur R, Gonzalez-Calderon G, Soupir AC, Smalley I, Tsai KY, Markowitz J, Khaled ML, Vallebuona E, Berglund AE, Eschrich SA, Yu X, Fridley BL. spatialGE Is a User-Friendly Web Application That Facilitates Spatial Transcriptomics Data Analysis. Cancer Res. 2025 Mar 3;85(5):848-858. doi: 10.1158/0008-5472.CAN-24-2346. PMID: 39636739; PMCID: PMC11873723.
+
+- Cable DM, Murray E, Zou LS, Goeva A, Macosko EZ, Chen F, Irizarry RA. Robust decomposition of cell type mixtures in spatial transcriptomics. Nat Biotechnol. 2022 Apr;40(4):517-526. doi: 10.1038/s41587-021-00830-w. Epub 2021 Feb 18. PMID: 33603203; PMCID: PMC8606190.
+
+- Miller, B.F., Huang, F., Atta, L. et al. Reference-free cell type deconvolution of multi-cellular pixel-resolution spatially resolved transcriptomics data. Nat Commun 13, 2339 (2022). https://doi.org/10.1038/s41467-022-30033-z
+
+- Janesick A, Shelansky R, Gottscho AD, Wagner F, Williams SR, Rouault M, Beliakoff G, Morrison CA, Oliveira MF, Sicherman JT, Kohlway A, Abousoud J, Drennon TY, Mohabbat SH; 10x Development Teams; Taylor SEB. High resolution mapping of the tumor microenvironment using integrated single-cell, spatial and in situ analysis. Nat Commun. 2023 Dec 19;14(1):8353. doi: 10.1038/s41467-023-43458-x. PMID: 38114474; PMCID: PMC10730913.
+
 *Day 2 notebook*
 
 - Marconato, L., Palla, G., Yamauchi, K.A. et al. SpatialData: an open and universal data framework for spatial omics. Nat Methods 22, 58–62 (2025). https://doi.org/10.1038/s41592-024-02212-x
 
 - Chi-Li Chiu, Nathan Clack, the napari community, napari: a Python Multi-Dimensional Image Viewer Platform for the Research Community, Microscopy and Microanalysis, Volume 28, Issue S1, 1 August 2022, Pages 1576–1577, https://doi.org/10.1017/S1431927622006328
+
+- Wu, S.Z., Al-Eryani, G., Roden, D.L. et al. A single-cell and spatially resolved atlas of human breast cancers. Nat Genet 53, 1334–1347 (2021). https://doi.org/10.1038/s41588-021-00911-1
